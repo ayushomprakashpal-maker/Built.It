@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="description" content="FIXED.IT — Gen-Z repair and restoration studio for watches and clothes.">
+<title>Contact & Forms | FIXED.IT</title>
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<header class="nav">
+  <div class="container nav-inner">
+    <a class="logo" href="index.html">FIXED<span>.IT</span></a>
+    <button class="menu" aria-label="Open menu">☰</button>
+    <nav class="nav-links">
+      <a href="index.html">Home</a>
+      <a href="about.html">About Us</a>
+      <a href="services.html">Services</a>
+      <a href="gallery.html">Gallery</a>
+      <a href="contact.html">Contact</a>
+    </nav>
+    <a class="btn btn-primary" href="contact.html">Start a Repair ↗</a>
+  </div>
+</header>
+
+<main>
+<section class="page-hero">
+<div class="container reveal">
+<span class="kicker">CONTACT / 05</span>
+<h1>LET'S GET YOUR<br><span class="highlight">FAVOURITE THING</span> FIXED.</h1>
+<p class="lead">Use one of the forms below. With Google Sheets connected, every submission can be saved automatically.</p>
+</div>
+</section>
+<section class="section">
+<div class="container form-wrap">
+<div class="form-intro reveal">
+<span class="kicker">DATA ENTRY HUB</span>
+<h2 style="margin:12px 0 18px">PICK<br>YOUR <span class="highlight">FORM.</span></h2>
+<p class="lead">This page contains the required data-entry forms for the college project: registration, product/service enquiry and feedback/contact.</p>
+<div class="notice" style="margin-top:20px">⚡ Demo ready. Add your Apps Script Web App URL inside <b>script.js</b> to save submissions to Google Sheets.</div>
+</div>
+<div class="form-card reveal">
+<div class="tabs">
+<button class="tab active" data-target="enquiryPanel">Product Enquiry</button>
+<button class="tab" data-target="registrationPanel">Registration</button>
+<button class="tab" data-target="feedbackPanel">Feedback / Contact</button>
+</div>
+
+<div id="enquiryPanel" class="form-panel">
+<form data-form>
+<input type="hidden" name="formType" value="Product Enquiry">
+<div class="form-grid">
+<div class="field"><label>Name <span class="required">*</span></label><input name="name" required placeholder="Your name"></div>
+<div class="field"><label>Email <span class="required">*</span></label><input type="email" name="email" required placeholder="you@email.com"></div>
+<div class="field"><label>Item type</label><select name="itemType"><option>Watch</option><option>Clothing</option><option>Other</option></select></div>
+<div class="field"><label>Service</label><select name="service"><option>Repair</option><option>Restoration</option><option>Custom rework</option><option>Not sure</option></select></div>
+<div class="field full"><label>What needs fixing?</label><textarea name="message" placeholder="Tell us about the damage, item and what you want..."></textarea></div>
+</div><button class="btn btn-primary" type="submit">Submit →</button><div class="form-message"></div>
+</form>
+</div>
+
+<div id="registrationPanel" class="form-panel" style="display:none">
+<form data-form>
+<input type="hidden" name="formType" value="Registration">
+<div class="form-grid">
+<div class="field"><label>Full name <span class="required">*</span></label><input name="name" required></div>
+<div class="field"><label>Email <span class="required">*</span></label><input type="email" name="email" required></div>
+<div class="field"><label>Phone</label><input name="phone" type="tel"></div>
+<div class="field"><label>Age group</label><select name="ageGroup"><option>Under 18</option><option>18–24</option><option>25–34</option><option>35+</option></select></div>
+<div class="field full"><label>What are you interested in?</label><input name="interest" placeholder="Watches, clothing, custom restoration..."></div>
+</div><button class="btn btn-primary" type="submit">Register →</button><div class="form-message"></div>
+</form>
+</div>
+
+<div id="feedbackPanel" class="form-panel" style="display:none">
+<form data-form>
+<input type="hidden" name="formType" value="Feedback / Contact">
+<div class="form-grid">
+<div class="field"><label>Name <span class="required">*</span></label><input name="name" required></div>
+<div class="field"><label>Email <span class="required">*</span></label><input type="email" name="email" required></div>
+<div class="field"><label>Rating</label><select name="rating"><option>5 — Iconic</option><option>4 — Great</option><option>3 — Good</option><option>2 — Needs work</option><option>1 — Not it</option></select></div>
+<div class="field"><label>Topic</label><select name="topic"><option>General</option><option>Service</option><option>Website</option><option>Suggestion</option></select></div>
+<div class="field full"><label>Message <span class="required">*</span></label><textarea name="message" required placeholder="Drop your feedback..."></textarea></div>
+</div><button class="btn btn-pink" type="submit">Send feedback →</button><div class="form-message"></div>
+</form>
+</div>
+</div>
+</div>
+</section>
+</main>
+
+<footer class="footer">
+  <div class="container footer-grid">
+    <div>
+      <div class="logo">FIXED<span>.IT</span></div>
+      <p style="margin-top:8px">Repair the thing. Keep the story. Repeat the fit. A Gen-Z-first repair & restoration studio for watches and clothes.</p>
+    </div>
+    <div>
+      <div class="socials">
+        <a href="https://instagram.com/" target="_blank">Instagram</a>
+        <a href="mailto:hello@fixedit.example">Email</a>
+      </div>
+      <p style="margin-top:10px;font:500 .7rem 'DM Mono',monospace">REPAIR • RESTORE • REPEAT © 2026</p>
+    </div>
+  </div>
+</footer>
+<script src="script.js"></script></body></html>

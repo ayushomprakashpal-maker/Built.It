@@ -1,0 +1,16 @@
+{
+  "project": "FIXED.IT \u2014 Gen-Z Repair & Restoration",
+  "pages": 5,
+  "forms": [
+    "Product Enquiry",
+    "Registration",
+    "Feedback / Contact"
+  ],
+  "database": "Google Sheets via Google Apps Script",
+  "tech": [
+    "HTML5",
+    "CSS3",
+    "JavaScript",
+    "Google Apps Script"
+  ]
+}
